@@ -200,20 +200,20 @@ nav{
     font-size: 20px;
 }
 
-.arrow{
-    position: relative;
-    top: 60px;
-    left: 50%;
-    margin-left: -20px;
-    width: 40px;
-    height: 40px;
-    background-size: 100% 100%;
-    background-image: url('../imagens/arrow.png');
-    transition: 2s;
+#arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    background-color: rgb(15, 10, 90);
+    transition: 3s;
+    padding: 5px;
+    border-radius: 10px;
 }
 
-.arrow:hover{
-    transform: rotate(550deg);
+#arrow:hover{
+    transform: rotate(180deg);
+    background-color: maroon;
 }
 
 .setor1{
@@ -431,6 +431,19 @@ section.base{
     margin-top: 15px;
     margin-left: 15%;
     border-radius: 30px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .map-wraper{
